@@ -1,7 +1,4 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
-
-// Set this to your exact GitHub repository name
 const repoName = 'furniture-manufacturing-landing-page';
 
 const nextConfig = {
@@ -12,8 +9,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isProd ? `/${repoName}` : '',
-  assetPrefix: isProd ? `/${repoName}/` : '',
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
 };
 
 export default nextConfig;
